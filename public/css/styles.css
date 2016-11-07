@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+body {
+  margin: 60px;
+  background-color: forestgreen; }
+
+h1 {
+  text-align: center; }
+
+.roundCorners {
+  border-top-right-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-bottom-left-radius: 10px;
+  box-shadow: 1px 1px 5px black;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7); }
+
+#nonButton {
+  box-sizing: border-box;
+  background-color: #B8B8B8;
+  width: 225px;
+  height: 400px;
+  margin: auto;
+  padding-top: 12.5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: bold;
+  border-style: outset;
+  border-color: #C8C8C8;
+  box-shadow: 4px 4px 20px black; }
+  #nonButton #casio {
+    float: left;
+    font-family: arial;
+    font-size: 20px;
+    transform: translateY(20%);
+    -webkit-transform: translateY(20%);
+    -moz-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    -o-transform: translateY(20%); }
+  #nonButton #screen {
+    box-sizing: border-box;
+    height: 50px;
+    background-color: #707070;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-style: inset;
+    border-width: 6px 6px 6px 6px;
+    text-align: right;
+    text-size: 40px; }
+    #nonButton #screen #shiftSome {
+      margin-right: 15px;
+      white-space: pre; }
+  #nonButton #solarThing {
+    box-sizing: border-box;
+    float: right;
+    width: 75px;
+    height: 30px;
+    background-color: #3f3f3f;
+    border-style: inset;
+    border-width: 4px 4px 4px 4px; }
+    #nonButton #solarThing #leftLine {
+      height: 100%;
+      width: 50%;
+      border-right: 1px solid #707070; }
+    #nonButton #solarThing #midLine {
+      height: 100%;
+      width: 65%;
+      border-right: 1px solid #707070; }
+    #nonButton #solarThing #rightLine {
+      height: 100%;
+      width: 75%;
+      border-right: 1px solid #707070; }
+  #nonButton .cancelButtons {
+    width: 23%;
+    height: 12.5%;
+    float: left;
+    background-color: red;
+    margin-right: 2.66%;
+    margin-top: 5px; }
+    #nonButton .cancelButtons:hover {
+      background-color: rgba(255, 0, 0, 0.5); }
+  #nonButton .otherButtons {
+    width: 23%;
+    height: 12.5%;
+    float: left;
+    background: #909090;
+    margin-right: 2.66%;
+    margin-top: 5px; }
+    #nonButton .otherButtons:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+    #nonButton .otherButtons #division {
+      font-size: 30px;
+      font-weight: normal;
+      transform: translateY(15%);
+      -webkit-transform: translateY(15%);
+      -moz-transform: translateY(15%);
+      -ms-transform: translateY(15%);
+      -o-transform: translateY(15%); }
+  #nonButton .centerBlock {
+    transform: translateY(75%);
+    -webkit-transform: translateY(75%);
+    -moz-transform: translateY(75%);
+    -ms-transform: translateY(75%);
+    -o-transform: translateY(75%); }
+  #nonButton .rightButton {
+    margin-right: -2.66%; }
+  #nonButton #zeroButton {
+    width: 48.5%;
+    height: 12.5%;
+    float: left;
+    background-color: #909090;
+    margin-right: 2.66%;
+    margin-top: 5px; }
+    #nonButton #zeroButton:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+  #nonButton #equalsButton {
+    width: 42.5px;
+    height: 27%;
+    float: left;
+    background-color: #D3D3D3;
+    margin-top: 5px;
+    transform: translateY(-53%);
+    -webkit-transform: translateY(-53%);
+    -moz-transform: translateY(-53%);
+    -ms-transform: translateY(-53%);
+    -o-transform: translateY(-53%); }
+    #nonButton #equalsButton:hover {
+      background-color: rgba(128, 0, 128, 0.4); }
+  #nonButton .centerEquals {
+    transform: translateY(225%);
+    -webkit-transform: translateY(225%);
+    -moz-transform: translateY(225%);
+    -ms-transform: translateY(225%);
+    -o-transform: translateY(225%); }
+
+/*# sourceMappingURL=styles.css.map */

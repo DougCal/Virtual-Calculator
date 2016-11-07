@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body{
+  margin: 60px;
+  background-color: forestgreen;
+}
+
+h1{
+  text-align: center;
+}
+
+@mixin transform($trans) {
+  transform: $trans;
+  -webkit-transform: $trans;
+  -moz-transform: $trans;
+  -ms-transform: $trans;
+  -o-transform: $trans;
+}
+
+@mixin border-top($topPx){
+  border-top-right-radius: $topPx;
+  -webkit-border-top-right-radius: $topPx;
+  -moz-border-top-right-radius: $topPx;
+  border-top-left-radius: $topPx;
+  -webkit-border-top-left-radius: $topPx;
+  -moz-border-top-left-radius: $topPx;
+}
+
+@mixin border-bottom($bottomPx){
+  border-bottom-right-radius: $bottomPx;
+  -webkit-border-bottom-right-radius: $bottomPx;
+  -moz-border-bottom-right-radius: $bottomPx;
+  border-bottom-left-radius: $bottomPx;
+  -webkit-border-bottom-left-radius: $bottomPx;
+  -moz-border-bottom-left-radius: $bottomPx;
+}
+
+@mixin hover-color($color) {
+   &:hover{
+       background-color: $color;
+   }
+}
+
+.roundCorners{
+  @include border-top(5px);
+  @include border-bottom(10px);
+  box-shadow: 1px 1px 5px black;
+  border-bottom: 2px solid rgba(255, 255, 255, .7);
+}
+
+#nonButton{
+  box-sizing: border-box;
+  background-color: #B8B8B8;
+  width: 225px;
+  height: 400px;
+  margin: auto;
+  padding: {
+    top: 12.5px;
+    right: 20px;
+    left: 20px;
+    bottom: 15px;
+  }
+  text-align: center;
+  font: {
+    family: 'Source Code Pro', monospace;
+    weight: bold;
+  }
+  border: {
+    style: outset;
+    color: #C8C8C8;
+  }
+  box-shadow: 4px 4px 20px black;
+  
+  #casio{
+    float:left;
+    font: {
+      family: arial;
+      size: 20px;
+    }
+    @include transform(translateY(20%));
+  }
+  
+  #screen{
+    box-sizing: border-box;
+    height: 50px;
+    background-color: #707070;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border: {
+      style: inset;
+      width: 6px 6px 6px 6px;
+    }
+    text-align: right;
+    text-size: 40px;
+    
+    #shiftSome{
+      margin-right: 15px;
+      white-space: pre;
+    }
+  }
+  
+  #solarThing{
+    box-sizing: border-box;
+    float: right;
+    width: 75px;
+    height: 30px;
+    background-color: #3f3f3f;
+    border: {
+      style: inset;
+      width: 4px 4px 4px 4px;
+    }
+    
+    #leftLine{
+      height: 100%;
+      width: 50%;
+      border-right:1px solid #707070;
+    }
+    
+    #midLine{
+      height: 100%;
+      width: 65%;                        //Remember to make the percentage to this width into a function
+      border-right:1px solid #707070;
+    }
+    
+    #rightLine{
+      height: 100%;
+      width: 75%;
+      border-right:1px solid #707070;
+    }
+  }
+  
+  .cancelButtons{
+    width: 23%;
+    height: 12.5%;
+    float: left;
+    background-color: red;
+    margin: {
+      right: 2.66%;
+      top: 5px;
+    }
+    @include hover-color (rgba(255, 0, 0, 0.5));  
+  }
+  
+  .otherButtons{
+    width: 23%;
+    height: 12.5%;
+    float: left;
+    background: #909090;
+    margin: {
+      right: 2.66%;
+      top: 5px;
+    }
+    @include hover-color (rgba(255, 255, 255, 0.1));
+  
+    #division{
+      font: {
+        size: 30px;
+        weight: normal;
+      }
+      @include transform(translateY(15%));
+    }
+  }
+  
+  .centerBlock{
+    @include transform(translateY(75%));
+  }
+  
+  .rightButton{
+    margin-right: -2.66%;
+  }
+  
+  #zeroButton{
+    width: 23%*2+2.5;
+    height: 12.5%;
+    float: left;
+    background-color: #909090;
+    margin: {
+      right: 2.66%;
+      top: 5px;
+    }
+    @include hover-color (rgba(255, 255, 255, 0.1));
+  }
+  
+  #equalsButton{
+    width: 42.5px;
+    height: 15%*1.8;
+    float: left;
+    background-color: #D3D3D3;
+    margin: {                        //Remember to adjust your equals sign after making adjustments
+      top: 5px;
+    }
+    @include transform(translateY(-53%));
+    @include hover-color (rgba(128, 0, 128, 0.4));
+  }
+  
+  .centerEquals{
+    @include transform(translateY(225%));
+  }
+}
